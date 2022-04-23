@@ -1,0 +1,23 @@
+title: OFFE
+email: offe.dev@outlook.com
+description: A coffee lover and software engineer
+url: offe.site
+
+sections: 
+  projects:
+    - title: Focus
+    - title: Duo
+    - title: Snap
+    - title: Quake
+    - title: Flow
+      
+contact:
+  - type: Twitter
+    handle: offe42
+    url: https//twitter.com/offe42
+    show_icon: true
+  - type: WeChat
+    handle: offe
+    show_icon: true
+  - type: Telegram
+    handle: offe42

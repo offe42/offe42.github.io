@@ -2,6 +2,66 @@
 layout: default
 ---
 
+{% assign about = site.data.about %}
+
 <div class="card-container">
+
+    <div class="card">
+        <div class="cover">
+            <div class="author">
+                {{ about.title }}
+            </div>
+            <div class="cover-image">
+                <div class="cover-overlay"></div>
+            </div>
+        </div>
+        <div class="description">
+            <div class="description-item">{{ about.description }}</div>
+            <div class="description-item">
+                <a href="https://{{about.url}}">{{about.url}}</a>
+            </div>
+        </div>
     
+        <section class="section">
+            <div class="section-title">
+                <h2 class="main-title">
+                    我的项目
+                </h2>
+                <p class="sub-title">
+                    PROJECTS
+                </p>
+            </div>
+            <div class="section-content">
+                <ul class="content-list">
+                    {% for item in about.sections.projects %}
+                    <li>
+                        {% if item.url %}
+                        <a class="project-link" href="{{item.url}}">{{ item.title }}</a>
+                        {% else %}
+                        <a class="project-link">{{ item.title }}</a>
+                        {% endif %}
+                    </li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </section>
+    
+        <section class="section">
+            <div class="section-title">
+                <h2 class="main-title">
+                    联系我
+                </h2>
+                <p class="sub-title">
+                    CONTACT
+                </p>
+            </div>
+            <div class="section-content">
+                <ul class="content-list">
+                    {% for item in about.contact %}
+                    <li class="contact-item">{{ item.type }}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </section>
+    </div>
 </div>
