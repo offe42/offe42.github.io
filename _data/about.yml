@@ -5,6 +5,8 @@ url: offe.site
 
 sections: 
   projects:
+    - title: Music Plus
+      url: https://itunes.apple.com/app/musicplus/id1626398921?mt=8&ct=offesite
     - title: Focus
     - title: Duo
     - title: Snap
@@ -14,10 +16,8 @@ sections:
 contact:
   - type: Twitter
     handle: offe42
-    url: https//twitter.com/offe42
+    url: https://twitter.com/offe42
     show_icon: true
-  - type: WeChat
-    handle: offe
+  - type: Email
+    url: mailto:offe.dev@outlook.com
     show_icon: true
-  - type: Telegram
-    handle: offe42

@@ -36,7 +36,7 @@ layout: default
                     {% for item in about.sections.projects %}
                     <li>
                         {% if item.url %}
-                        <a class="project-link" href="{{item.url}}">{{ item.title }}</a>
+                        <a class="project-link" href="{{item.url}}" target="_blank">{{ item.title }}</a>
                         {% else %}
                         <a class="project-link">{{ item.title }}</a>
                         {% endif %}
@@ -58,7 +58,13 @@ layout: default
             <div class="section-content">
                 <ul class="content-list">
                     {% for item in about.contact %}
-                    <li class="contact-item">{{ item.type }}</li>
+                    <li class="contact-item">
+                        {% if item.url %}
+                        <a class="contact-link" href="{{item.url}}" target="_blank">{{ item.type }}</a>
+                        {% else %}
+                        {{ item.type }}
+                        {% endif %}
+                    </li>
                     {% endfor %}
                 </ul>
             </div>
